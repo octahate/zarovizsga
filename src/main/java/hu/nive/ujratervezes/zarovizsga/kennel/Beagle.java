@@ -8,11 +8,11 @@ public class Beagle extends Dog {
 
     @Override
     void feed() {
-        happiness +=2;
+        happiness+=2;
     }
 
     @Override
     void play(int hours) {
-        happiness+= hours*2;
+        happiness+=hours*2;
     }
 }

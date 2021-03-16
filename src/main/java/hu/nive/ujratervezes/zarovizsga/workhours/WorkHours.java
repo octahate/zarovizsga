@@ -25,13 +25,11 @@ public class WorkHours {
     }
 
     private String reformatLine(String line){
-        StringBuilder sb = new StringBuilder();
-        sb.append(line.split(",")[1]);
-        sb.append(",");
-        sb.append(line.split(",")[0]);
-        sb.append(": ");
-        sb.append(line.split(",")[2]);
-        return sb.toString();
+        return line.split(",")[1] +
+                "," +
+                line.split(",")[0] +
+                ": " +
+                line.split(",")[2];
     }
 
     public String minWork(String file){
